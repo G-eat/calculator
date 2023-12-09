@@ -1,0 +1,179 @@
+{
+	"info": {
+		"_postman_id": "bfa5c23e-eea2-40fa-bcdd-0519c30dd758",
+		"name": "Calculator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User Register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"andi\",\r\n  \"email\": \"andi@gmail.com\",\r\n  \"password\": \"password123\",\r\n  \"password_confirmation\": \"password123\"\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"andi@gmail.com\",\r\n  \"password\": \"password123\"\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Calculator history - With authorization(change token-authorization tab)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiYzJmMjNkMDczNjU2Yjg5ZmI0M2ZkNTc4MmY2MDIwY2IxMzAwNGIwMGIwODY3MDc1MDQzYmIyODE1ZGFmZGRmMzZhMDBkOTU0MWJkMGMxYmMiLCJpYXQiOjE3MDIxNDkwMDQuNjIyNTczLCJuYmYiOjE3MDIxNDkwMDQuNjIyNTgxLCJleHAiOjE3MzM3NzE0MDQuNjEwODg4LCJzdWIiOiI5Iiwic2NvcGVzIjpbXX0.ceAcvj4FvoIhIr3NaHF9l7F4ANDRTtV9_i-GqrdOJKVGZe09sruGKcSAd0zT4X16hEiv-Qihw1GxzuUxuh-5hotxGGAM9lUQCxs4w0Z9UGE6Zwv678NuGNvvqT8r_cP6yLyeDP6G5RigTuTLN6Xcz-BNIyEvJACxvvCWtbcJbfSvYMtRZuPXkXzXXTTu66WuC8HXPwGhpIR8eo1bhPMb1N-ig0Ojt7N6iQUvYL8eKuY8y4dryju9y-RSEPSmzLZNaeBAKEfs7Yw11GI0SkmLjoK6nLNZspgb2h3Wu8IRxRrhz62Vg_Kj9xHyMtuCEzgOsUTca9mMs3yFHcPGnNALsZdK2OoouggGyaubEEsRiGELbCKH2pDpNX5RGfHCARGRYi5l0X7wHaTqmyhqh8k-nCaOFpitLcbFll2h7ndZbT4kRvGPPvoS4arjWHNBZ1jKX7wxUJv_5YkuxeFzL4y0sM9f0BO2TsS1x29m7p4O3q3gv78foqdNWKusizs2oplkrspvHrRAKL7pdjn2DV-Y5XOYkond4HjMI4wd71IGiKtw7sTWsyRT-afEehxF8pTq5O-YVDHYi3ZqW9aequaNzSvsunIKl9TbNNdiQxrH4Bx1K5y8MgrIkMoE0lW_OvkxMZRyI4j8afkK6XjRUUht2GY0i1BrREZlOnf0xUpPtAE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/calculator/history",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"calculator",
+						"history"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Calculate - With authorization(change token-authorization tab)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiYzJmMjNkMDczNjU2Yjg5ZmI0M2ZkNTc4MmY2MDIwY2IxMzAwNGIwMGIwODY3MDc1MDQzYmIyODE1ZGFmZGRmMzZhMDBkOTU0MWJkMGMxYmMiLCJpYXQiOjE3MDIxNDkwMDQuNjIyNTczLCJuYmYiOjE3MDIxNDkwMDQuNjIyNTgxLCJleHAiOjE3MzM3NzE0MDQuNjEwODg4LCJzdWIiOiI5Iiwic2NvcGVzIjpbXX0.ceAcvj4FvoIhIr3NaHF9l7F4ANDRTtV9_i-GqrdOJKVGZe09sruGKcSAd0zT4X16hEiv-Qihw1GxzuUxuh-5hotxGGAM9lUQCxs4w0Z9UGE6Zwv678NuGNvvqT8r_cP6yLyeDP6G5RigTuTLN6Xcz-BNIyEvJACxvvCWtbcJbfSvYMtRZuPXkXzXXTTu66WuC8HXPwGhpIR8eo1bhPMb1N-ig0Ojt7N6iQUvYL8eKuY8y4dryju9y-RSEPSmzLZNaeBAKEfs7Yw11GI0SkmLjoK6nLNZspgb2h3Wu8IRxRrhz62Vg_Kj9xHyMtuCEzgOsUTca9mMs3yFHcPGnNALsZdK2OoouggGyaubEEsRiGELbCKH2pDpNX5RGfHCARGRYi5l0X7wHaTqmyhqh8k-nCaOFpitLcbFll2h7ndZbT4kRvGPPvoS4arjWHNBZ1jKX7wxUJv_5YkuxeFzL4y0sM9f0BO2TsS1x29m7p4O3q3gv78foqdNWKusizs2oplkrspvHrRAKL7pdjn2DV-Y5XOYkond4HjMI4wd71IGiKtw7sTWsyRT-afEehxF8pTq5O-YVDHYi3ZqW9aequaNzSvsunIKl9TbNNdiQxrH4Bx1K5y8MgrIkMoE0lW_OvkxMZRyI4j8afkK6XjRUUht2GY0i1BrREZlOnf0xUpPtAE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"input\": \"(8*5) + 2+3-(4*5)\"\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/calculator/calculate",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"calculator",
+						"calculate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
