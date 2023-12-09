@@ -61,12 +61,6 @@ Calculator history
 
 Access the application in your browser at http://127.0.0.1:8000.
 
-### Docker Setup
-
-1. Build and start the Docker containers:
-    ```bash
-    docker-compose up -d --build
-
 Access the application in your browser at http://127.0.0.1:8000.
 
 ### UML Diagrams
