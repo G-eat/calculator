@@ -23,10 +23,11 @@
     composer install
 
 4. Set up your environment variables:
-    Create a copy of the .env.example file and name it .env.
-    Configure your database connection in the .env file:
+    Create a copy of the .env.example file and name it .env
     ```bash
     cp .env.example .env
+
+    Configure your database connection in the .env file:
     
 5. Generate an application key:
     ```bash
