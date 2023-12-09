@@ -61,8 +61,6 @@ Calculator history
 
 Access the application in your browser at http://127.0.0.1:8000.
 
-Access the application in your browser at http://127.0.0.1:8000.
-
 ### UML Diagrams
 Access the UML diagrams at http://127.0.0.1:8000/uml.
 
