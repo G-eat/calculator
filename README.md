@@ -12,29 +12,35 @@
 
 1. Clone the repository:
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/G-eat/calculator.git
 
-2. Install PHP dependencies using Composer:
+2. Cd to project:
+    ```bash
+    cd calculator
+
+3. Install PHP dependencies using Composer:
     ```bash
     composer install
 
-3. Set up your environment variables:
+4. Set up your environment variables:
     Create a copy of the .env.example file and name it .env.
     Configure your database connection in the .env file:
-
-4. Generate an application key:
+    ```bash
+    cp .env.example .env
+    
+5. Generate an application key:
     ```bash
     php artisan key:generate
 
-5. Run migrations
+6. Run migrations
     ```bash
     php artisan migrate
 
-6. Passport command(for api)
+7. Passport command(for api)
     ```bash
     php artisan passport:install
 
-7. Start the Laravel development server:
+8. Start the Laravel development server:
     ```bash
     php artisan serve
 
@@ -52,4 +58,4 @@ Access the application in your browser at http://127.0.0.1:8000.
 Access the UML diagrams at http://127.0.0.1:8000/uml.
 
 ### Api Postman Collection
-    folder "public" - filename "calculator.postman_collection.json"
+Click to go to: [postman collection](https://github.com/G-eat/calculator/blob/master/public/calculator.postman_collection.json)
