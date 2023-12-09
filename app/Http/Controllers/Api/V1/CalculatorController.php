@@ -47,7 +47,7 @@ class CalculatorController extends Controller
 
     public function calculatorHistory() : JsonResponse 
     {
-        $history = CalculatorHistory::select('user_id','result','created_at')->where('user_id',auth()->id())->orderBy('created_at','desc')->paginate(1);
+        $history = CalculatorHistory::select('user_id','result','created_at')->where('user_id',auth()->id())->orderBy('created_at','desc')->paginate(15);
 
         return response()->json([
             'calculatorHistory' => $history

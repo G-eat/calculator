@@ -15,7 +15,7 @@ class CreateCalculatorHistoriesTable extends Migration
     {
         Schema::create('calculator_histories', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('user_id');
+            $table->foreignId('user_id')->constrained();
             $table->text('result');
             $table->timestamps();
         });

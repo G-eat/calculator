@@ -13,8 +13,9 @@ Route::post('register', [PassportAuthController::class, 'register']);
 Route::post('login', [PassportAuthController::class, 'login']);
 
 Route::group([
-    'middleware' => 'auth:api'
+    'middleware' => 'auth:api',
+    'prefix'     => 'calculator'
 ], function () {
-    Route::post('calculator/calculate', [CalculatorController::class, 'calculate']);
-    Route::get('calculator/history', [CalculatorController::class, 'calculatorHistory']);
+    Route::post('/calculate', [CalculatorController::class, 'calculate']);
+    Route::get('/history', [CalculatorController::class, 'calculatorHistory']);
 });

@@ -8,6 +8,20 @@
 - Composer
 - Docker (optional, for containerized development)
 
+### Tech Used: 
+
+- Laravel
+- VueJs
+- Passport
+
+## WEB Preview
+
+Calculator
+![Calculator](https://github.com/G-eat/calculator/blob/master/public/images/calculator.png)
+
+Calculator history
+![Calculator history](https://github.com/G-eat/calculator/blob/master/public/images/calculator_history.png)
+
 ### Installation
 
 1. Clone the repository:
