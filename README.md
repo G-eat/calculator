@@ -6,7 +6,6 @@
 
 - PHP 8.x
 - Composer
-- Docker (optional, for containerized development)
 
 ### Tech Used: 
 
