@@ -4,7 +4,7 @@
 
 ### Requirements
 
-- PHP 8.x
+- PHP 7.3 - 8.0
 - Composer
 
 ### Tech Used: 
@@ -12,6 +12,7 @@
 - Laravel
 - VueJs
 - Passport
+- MYSQL
 
 ## WEB Preview
 
